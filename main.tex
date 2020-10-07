@@ -187,32 +187,89 @@
   Veamos que pasa con \textsc{(()())(())}, podemos ver por su árbol de generación que si es parte
   de la gramática:\\
   \\
-  \center
-  \begin{forest}
-    [S
-      [(E)
-       [(E)
-         [$\epsilon$]
-       ]
-       [E
-         [()]
-       ]
-      ]
-      [E
+  \begin{center}
+    \begin{forest}
+      [S
         [(E)
-          [
-            ()
-          ]
+         [(E)
+           [$\epsilon$]
+         ]
+         [E
+           [(E)
+            [$\epsilon$]
+           ]
+         ]
         ]
         [E
-          [$\epsilon$]
+          [(E)
+            [
+              (E)
+              [$\epsilon$]
+            ]
+          ]
+          [E
+            [$\epsilon$]
+          ]
         ]
       ]
-    ]
-  \end{forest}
-  \\
+    \end{forest}
+  \end{center}
+
   Esto siendo el árbol de generación de nuestra cadena a probar. Podemos ver que
   si es parte de esta gramática.\\
+  \\
+  \part\\
+  \\
+  Vemos ahora que pasa con \textsc{(()()())(())}, podemos ver el árbol de generación,
+  con esto podemos estar seguro que pertenece. Y se ve de la siguiente manera:\\
+
+  \begin{center}
+    \begin{forest}
+      [S
+        [(E)
+         [(E)
+           [$\epsilon$]
+         ]
+         [E
+           [(E)
+            [$\epsilon$]
+           ]
+           [E
+            [(E)
+              [$\epsilon$]
+            ]
+            [E
+              [$\epsilon$]
+            ]
+           ]
+         ]
+        ]
+        [E
+          [(E)
+            [
+              (E)
+              [$\epsilon$]
+            ]
+          ]
+          [E
+            [$\epsilon$]
+          ]
+        ]
+      ]
+    \end{forest}
+  \end{center}
+
+  Como podemos ver, podemos llegar a la cadena deseada, usando las reglas
+  gramaticales. Gracias a esto podemos concluir que por tanto, la cadena
+  pertenece a la gramática.\\
+  \\
+  \part\\
+  \\
+  Podemos ver que para este problema el numero de paréntesis que abren y que cierran
+  no es el mismo, por eso podemos ver que no podría existir árbol de generación.
+  En este caso vemos que el \textsc{(((()))))()} cuenta con 5 paréntesis izquierdos,
+  pero en el caso de los paréntesis derechos cuenta con 6, así haciéndolo un caso
+  imposible de generar por la gramática dada.
 \end{homeworkProblem}
 
 \end{document}
