@@ -154,12 +154,14 @@
   \textbf{Ejemplo:}\\
   \\
   Sea la gramática de un lenguaje $A$, dada por $G = \{ \Sigma, T, S,P \}$
-  donde $\Sigma = {a,b,c,\dots, z} $, $T \rightarrow \Sigma$, y las producciones
+  donde $\Sigma = {a,b,c,\dots, z} $, $T = \Sigma$ y las producciones
   cualquier combinación de elementos del alfabeto,
-  y la gramática del lenguaje $B$,todo lo mismo que la $A$, menos que las
-  producciones son dadas por todas las palabras que sean del español. Podemos
+  y la gramática del lenguaje $B$,todo lo mismo que la $A$, menos las
+  producciones que son dadas por todas las palabras que sean del español. Podemos
   decir que nuestro diccionario es el siguiente conjunto $D = \{"perro"\}$. Vemos
-  que \textsc{perro}, pertenece a estos dos lenguajes.\\
+  que $perro$, pertenece a estos dos lenguajes. Se pueden agregar muchas
+  más palabras al diccionario, y se puede ver que siempre se cumple que el segundo
+  lenguaje esta contenido en el primero.\\
 \end{homeworkProblem}
 \begin{homeworkProblem}[25]
   Utilizando la gramática para el lenguaje de las cadenas de paréntesis
@@ -270,6 +272,38 @@
   En este caso vemos que el \textsc{(((()))))()} cuenta con 5 paréntesis izquierdos,
   pero en el caso de los paréntesis derechos cuenta con 6, así haciéndolo un caso
   imposible de generar por la gramática dada.
+\end{homeworkProblem}
+
+\begin{homeworkProblem}[30]
+  ¿Puede existir más de una gramática para un mismo lenguaje? Justifica tu respuesta plenamente.
+  En dado caso de que la respuesta sea \textbf{SI} selecciona alguna de las gramáticas con las que hemos
+  trabajado a lo largo de la tarea y brinda un ejemplo de esto.\\
+  \\
+  \solution \\
+  \\
+  Puede existir más de una gramática para un mismo lenguaje. Así propongo las siguientes gramáticas
+  que nos dan el mismo lenguaje. Tomamos por ejemplo el caso del ejercicio 17 de esta tarea donde
+  se propone una gramática:\\
+  \\
+  Considerando la siguiente $G = {\Sigma, T, S, P}$ donde $\Sigma = {a, b, c, S}$ es el alfabeto, $T = {a, b, c}$ es
+  el conjunto de símbolos terminales, $S$ es el símbolo inicial y $P$ son las siguientes producciones:
+  $S \rightarrow abS, S \rightarrow bcS, S \rightarrow bbS, S \rightarrow a, S \rightarrow cb$.\\
+  \\
+  Esta siendo nuestra gramática $A$, vemos que si proponemos una gramática diferente que nos de el mismo
+  lenguaje, estaríamos teniendo un contraejemplo de que para todo lenguaje $L \exists! G$.\\
+  \\
+  La gramática que se propone es la siguiente:\\
+  \\
+  Considerando la siguiente $G_1 = {\Sigma_1, T_1, S_1, P_1}$ donde $\Sigma_1 = {a, b, c, S}$ es el alfabeto, $T_1 = {a, b, c}$ es
+  el conjunto de símbolos terminales, $S_1$ es el símbolo inicial y $P_1$ son las siguientes producciones:
+  $S \rightarrow abS, S \rightarrow bES, S \rightarrow bcS, S \rightarrow a, S \rightarrow cb, E \rightarrow b $.\\
+  \\
+  Podemos ver que esta gramática genera lo mismo, ya que E, solo regresa como un resultado a $"b"$, y solo se usa en
+  el lugar donde podríamos poner a $"b"$, entonces, bien se puede hacer la simplificación de esta a la anterior
+  sin pedir muchas cosas de nuestras reglas. Solamente se hace una sustitución en un lugar.\\
+  \\
+  Por esto entonces podemos concluir que si es posible para algún lenguaje que existan 2 o más gramáticas
+  que lo generen.
 \end{homeworkProblem}
 
 \end{document}
