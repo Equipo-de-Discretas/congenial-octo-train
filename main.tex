@@ -8,6 +8,8 @@
 \usepackage{tikz}
 \usepackage[plain]{algorithm}
 \usepackage{algpseudocode}
+\usepackage{enumitem}
+\usepackage{forest}
 
 \usetikzlibrary{automata,positioning}
 
@@ -142,7 +144,7 @@
 \pagebreak
 
 \begin{homeworkProblem}[14]
-  ¿Es posible que una misma cadena pertenezca a m\'as de un lenguaje?
+  ¿Es posible que una misma cadena pertenezca a más de un lenguaje?
   Argumenta tu respuesta. Si la respuesta es afirmativa, proporciona un ejemplo.\\
   \\
   \solution\\
@@ -151,13 +153,66 @@
   \\
   \textbf{Ejemplo:}\\
   \\
-  Sea la gram\'atica de un lenjuage $A$, dada por $G = \{ \Sigma, T, S,P \}$
+  Sea la gramática de un lenguaje $A$, dada por $G = \{ \Sigma, T, S,P \}$
   donde $\Sigma = {a,b,c,\dots, z} $, $T \rightarrow \Sigma$, y las producciones
-  cualquier combinacion de elementos del alfabeto,
-  y la gram\'atica del lenjuage $B$,todo lo mismo que la $A$, menos que las
-  producciones son dadas por todas las palabras que sean del espa\~nol. Podemos
+  cualquier combinación de elementos del alfabeto,
+  y la gramática del lenguaje $B$,todo lo mismo que la $A$, menos que las
+  producciones son dadas por todas las palabras que sean del español. Podemos
   decir que nuestro diccionario es el siguiente conjunto $D = \{"perro"\}$. Vemos
-  que \textsc{perro}, pertenece a estos dos lenjuages.\\
+  que \textsc{perro}, pertenece a estos dos lenguajes.\\
+\end{homeworkProblem}
+\begin{homeworkProblem}[25]
+  Utilizando la gramática para el lenguaje de las cadenas de paréntesis
+  balanceados decide cuales de las siguientes cadenas están bien construidas
+  utilizando sus arboles de derivación:\\
+  \begin{enumerate}[label=\Alph*]
+    \item{(()()))}
+    \item{(()())(())}
+    \item{(()()())(())}
+    \item{(((()))))()}
+  \end{enumerate}
+
+  \solution\\
+  \\
+  \part\\
+  \\
+  Vemos a \textsc{(()()))}, ahora según la gramática de los paréntesis balanceados,
+  tenemos que tener siempre la misma cantidad de paréntesis derechos, que de izquierdos.\\
+  \\
+  Contamos que hay 3 paréntesis derechos, mientras que hay 4 paréntesis derechos. Por esto
+  podemos decir que no pertenece a esta gramática.\\
+  \\
+  \part\\
+  \\
+  Veamos que pasa con \textsc{(()())(())}, podemos ver por su árbol de generación que si es parte
+  de la gramática:\\
+  \\
+  \center
+  \begin{forest}
+    [S
+      [(E)
+       [(E)
+         [$\epsilon$]
+       ]
+       [E
+         [()]
+       ]
+      ]
+      [E
+        [(E)
+          [
+            ()
+          ]
+        ]
+        [E
+          [$\epsilon$]
+        ]
+      ]
+    ]
+  \end{forest}
+  \\
+  Esto siendo el árbol de generación de nuestra cadena a probar. Podemos ver que
+  si es parte de esta gramática.\\
 \end{homeworkProblem}
 
 \end{document}
