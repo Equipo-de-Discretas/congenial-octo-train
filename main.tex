@@ -194,18 +194,20 @@
       [S
         [(E)
          [(E)
+           [()]
            [$\epsilon$]
          ]
          [E
            [(E)
+            [()]
             [$\epsilon$]
            ]
          ]
         ]
         [E
           [(E)
-            [
-              (E)
+            [(E)
+              [()]
               [$\epsilon$]
             ]
           ]
@@ -230,26 +232,29 @@
       [S
         [(E)
          [(E)
+           [()]
            [$\epsilon$]
          ]
          [E
            [(E)
-            [$\epsilon$]
+             [()]
+             [$\epsilon$]
            ]
            [E
             [(E)
-              [$\epsilon$]
+               [()]
+               [$\epsilon$]
             ]
             [E
-              [$\epsilon$]
+               [$\epsilon$]
             ]
            ]
          ]
         ]
         [E
           [(E)
-            [
-              (E)
+            [(E)
+              [()]
               [$\epsilon$]
             ]
           ]
@@ -304,6 +309,29 @@
   \\
   Por esto entonces podemos concluir que si es posible para algún lenguaje que existan 2 o más gramáticas
   que lo generen.
+\end{homeworkProblem}
+
+\begin{homeworkProblem}[36]
+  \textbf{Cierto o falso} (justifica brevemente): Existe un algoritmo tal que para cualquier lenguaje
+  determine el conjunto de expresiones mínimas que genere dicho lenguaje.\\
+  \\
+  \solution\\
+  \\
+  \textbf{Falso}. Podemos ver que no siempre que queramos tener un lenguaje podemos
+  saber que la gramática mínima que lo genere, ya que supongamos que existe un lenguaje
+  A, que es el lenguaje de las expresiones gramáticas, y supongamos que es el mínimo,
+  con el cual podemos generar a todas las reglas gramaticales que generan a todos
+  los lenguajes posibles. Ya que podríamos generar una infinidad de lenguajes nuevos,
+  lo único que podríamos decir es que si existe un lenguaje que pueda generarse con
+  una cantidad finita de reglas, si las reglas son recursivas, y si las referencias
+  no son cíclicas, podemos decir que estamos en un camino aceptable con menor cantidad
+  de reglas.\\
+  \\
+  Ahora tratando de ser más formal, podemos decir que El lenguaje de los lenguajes formales
+  es un lenguaje formal. Como la definición de que es lo que es valido dentro de este lenguaje
+  esta dada en ese lenguaje. Esto entonces dando como resultado una teoría que se define con
+  la definición, entonces encontrar una demostración, de que es valido o no un mínimo de
+  reglas,  ya que al momento de definir estas, posiblemente no estamos contando todo lo que se tenga.\\
 \end{homeworkProblem}
 
 \end{document}
