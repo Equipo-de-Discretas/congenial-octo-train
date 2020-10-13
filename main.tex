@@ -10,6 +10,7 @@
 \usepackage{algpseudocode}
 \usepackage{enumitem}
 \usepackage{forest}
+\usepackage[all]{xy}
 
 \usetikzlibrary{automata,positioning}
 \graphicspath{{images/}}
@@ -155,7 +156,6 @@
   Y por ultimo estaría la Teoría de Grafos, que por lo regular es considerada parte de la Combinatoria, pero ha evolucionado lo suficiente como para ser considerada una materia por si misma.
 
 \end{homeworkProblem}
-
 
 \begin{homeworkProblem} [3]
 Explica la diferencia entre los conceptos \textit{discreto} y \textit{continuo} en matemáticas.\\
@@ -440,6 +440,39 @@ Una gramática formal es una estructura lógico-matemática con un conjunto de r
   que lo generen.
 \end{homeworkProblem}
 
+\begin{homeworkProblem} [33]
+Investiga qué es una \textit{gramática libre de contexto} y menciona cuál de las gramáticas con las que hemos trabajado a lo lardo de la tarea o ayudantías cumple con serlo.\\
+\\
+\solution\\
+\\
+Una gramática de libre contexto es una gramática formal en la que cada regla de producción es de la forma: \xymatrix{*+<2em>{V} \ar[r] & w}\\
+Donde V es un \textbf{símbolo no terminal} y w es una cadena de terminales y/o no terminales. El no terminal V siempre puede ser sustituido por w sin tener en cuenta el contexto en el que ocurra.
+La notación más frecuentemente utilizada para expresar gramáticas de libre contexto es la Backus-Naur.\\
+\\
+\textbf{Ejemplos}\\
+\\
+Dado un lenguaje, construir la gramática:
+\begin{enumerate}
+\item Cadenas de bits {o,1} que empiezan con 0 y terminan con 1.\\
+$T = \{ 0, 1 \}$\\
+$S ::= OE1$\\
+$E ::= 0 | 1 | \epsilon | EE$\\
+\\
+\item Cadenas de puros ceros con longitud impar.\\
+$T = \{ 0, 1 \}$\\
+$S ::= 0 | OOS$\\
+\\
+\item Cadenas de ceros con longitud par.\\
+$T = \{ 0, 1 \}$\\
+$S ::= \epsilon | 00S $\\
+\\
+\item Cadenas palíndromas de bits.\\
+$T = \{ 0, 1 \}$\\
+$S ::= 0S0 | 1S1 | 00 | 11 | 0 | 1$\\
+\end{enumerate}
+\end{homeworkProblem}
+
+
 \begin{homeworkProblem}[36]
   \textbf{Cierto o falso} (justifica brevemente): Existe un algoritmo tal que para cualquier lenguaje
   determine el conjunto de expresiones mínimas que genere dicho lenguaje.\\
@@ -462,5 +495,13 @@ Una gramática formal es una estructura lógico-matemática con un conjunto de r
   la definición, entonces encontrar una demostración, de que es valido o no un mínimo de
   reglas,  ya que al momento de definir estas, posiblemente no estamos contando todo lo que se tenga.\\
 \end{homeworkProblem}
+
+\section{Bibliografía}
+\begin{itemize}
+\item https://es.wikipedia.org/wiki/Gram%C3%A1tica_libre_de_contexto#Ejemplo_1
+\item https://es.wikipedia.org/wiki/Gram%C3%A1tica_libre_de_contexto
+\item http://estructurasmatematicas.blogspot.com/2009/04/matematica-discreta.html
+\end{itemize}
+
 
 \end{document}
