@@ -472,6 +472,24 @@ $S ::= 0S0 | 1S1 | 00 | 11 | 0 | 1$\\
 \end{enumerate}
 \end{homeworkProblem}
 
+\begin{homeworkProblem} [34]
+Investiga en qué consiste la \textit{Forma Normal de Chomsky}. Selecciona alguna de las gramáticas con las que hemos trabajado anteriormente y llévala a esta forma.\\
+\\
+\solution\\
+\\
+Dada la gramática:
+Cadenas de bits {o,1} que empiezan con 0 y terminan con 1.\\
+$T = \{ 0, 1 \}$\\
+$S ::= OE1$\\
+$E ::= 0 | 1 | \epsilon | EE$\\
+\\
+Se pasa a:\\
+$T = {\epsilon, 1 }$\\
+$\sigma = {\epsilon, 1, 0}$\\
+$S ::= \epsilon$\\
+$E ::= 0 | 1 | \epsilon | EE $\\
+
+\end{homeworkProblem}
 
 \begin{homeworkProblem}[36]
   \textbf{Cierto o falso} (justifica brevemente): Existe un algoritmo tal que para cualquier lenguaje
