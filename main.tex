@@ -12,7 +12,7 @@
 \usepackage{forest}
 
 \usetikzlibrary{automata,positioning}
-
+\graphicspath{{images/}}
 %
 % Basic Document Settings
 %
@@ -89,11 +89,12 @@
 %
 
 \newcommand{\hmwkTitle}{Tarea\ \#1}
-\newcommand{\hmwkDueDate}{Octubre 13, 2020}
+\newcommand{\hmwkDueDate}{Octubre 12, 2020}
 \newcommand{\hmwkClass}{Matem\'aticas Discretas}
 \newcommand{\hmwkClassTime}{}
 \newcommand{\hmwkClassInstructor}{Profesora Alma Ar\'evalo Loyola}
 \newcommand{\hmwkAuthorName}{\textbf{Sof\'ia Alatorre} \and \textbf{Edson Morales} \and \textbf{ Diego Navarro }}
+\newcommand{\hmwkAuthorEmail}{\textbf{sofialatorre313@ciencias.unam.mx} \and \textbf{ edsonmorales_17@ciencias.unam.mx } \and \textbf{ diegonavarro400@ciencias.unam.mx }}
 
 %
 % Title Page
@@ -108,7 +109,8 @@
 }
 
 \author{\hmwkAuthorName}
-\date{}
+\date{ sofialatorre313@ciencias.unam.mx \& edsonmorales\_17@ciencias.unam.mx \& diegonavarro400@ciencias.unam.mx }
+
 
 \renewcommand{\part}[1]{\textbf{\large Parte \Alph{partCounter}}\stepcounter{partCounter}\\}
 
@@ -163,7 +165,7 @@ Explica la diferencia entre los conceptos \textit{discreto} y \textit{continuo} 
 Las matemáticas continuas estudian los conceptos que tienen ámbitos infinitos, tales como la continuidad y el cambio continuo, el sistema de los números reales es el principal de las matemáticas continuas; por otra parte, las matemáticas discretas son la parte encargada del estudio de los conjuntos discretos y sus procesos en matemática son finitos y contables.
 \end{homeworkProblem}
 
-\begin{homeworkProblem} [4]
+\begin{homeworkProblem}
  Menciona la importancia de las matemáticas discretas en las Ciencias de la Computación.\\
  \\
   \solution\\
@@ -183,7 +185,7 @@ Las matemáticas continuas estudian los conceptos que tienen ámbitos infinitos,
 
 \pagebreak
 
-\begin{homeworkProblem} [7]
+\begin{homeworkProblem}
 ¿Qué es un lenguaje formal?\\
  \\
  \solution\\
@@ -192,7 +194,7 @@ Las matemáticas continuas estudian los conceptos que tienen ámbitos infinitos,
 
 \end{homeworkProblem}
 
-\begin{homeworkProblem} [8]
+\begin{homeworkProblem}
 ¿Cuáles son las diferencias entre lenguaje formal y \textit{lenguaje natural}?\\
 \\
 \solution\\
@@ -200,7 +202,7 @@ Las matemáticas continuas estudian los conceptos que tienen ámbitos infinitos,
 El lenguaje natural es el que ha surgido de manera natural a través de la historia, ha experimentado cambios con el tiempo y sirve para la comunicación entre animales, entre ellos incluido el propio ser humano y sus distintos idiomas. En cambio, el lenguaje formal es artificial; es decir, inventado para uno o varios propósitos definidos y está compuesto por reglas precisas y fijas.
 \end{homeworkProblem}
 
-\begin{homeworkProblem} [9]
+\begin{homeworkProblem}
 ¿Qué es una \textit{gramática formal} Menciona su importancia y sus aplicaciones en las Ciencias de la Computación.\\
 \\
 \solution\\
@@ -217,7 +219,7 @@ Sus aplicaciones en las Ciencias de la Computación son para que haya una comuni
 Una gramática formal es una estructura lógico-matemática con un conjunto de reglas de formación que definen las cadenas de caracteres admisibles en un determinado lenguaje formal o lenguaje natural.
 \end{homeworkProblem}
 
-\begin{homeworkProblem} [11]
+\begin{homeworkProblem}
  En a lo más 15 lineas, escribe una pequeña biografía de Kurt Gödel incluyendo sus aportaciones más importantes. Inserta una imagen de él al derecho del texto, de tal manera que la imagen ocupe la mayor cantidad de líneas posibles. Consulta tres fuentes distintas y cítalas.\\
  \\
   \solution\\
@@ -231,10 +233,9 @@ Una gramática formal es una estructura lógico-matemática con un conjunto de r
   En 1933 Gödel viajó por primera vez a los Estados Unidos donde conoció a Albert Einstein, con quien estrechó lazos de amistad. Presentó una conferencia en la reunión anual de la Sociedad Americana de Matemáticas. En el transcurso de ese año Gödel también desarrolló ideas sobre la computabilidad y la función recursiva al punto que presentó una conferencia sobre dichas funciones y sobre el concepto de verdad. Posteriormente, este trabajo se desarrolló en la teoría de los números, empleando la numeración de Gödel.\\
 
   En 1951 Gödel fue reconocido (junto a Julian Schwinger) con el primer Premio Albert Einstein, y también se le entregó la National Medal of Science en 1974.\\
-  
-  \begin{figure} [h]
-      \raggedleft %Figura alineada a la derecha
-      \includegraphics{Godel.png} 
+  \begin{figure}[h]
+      \center
+      \includegraphics[scale=0.5]{Godel}
       \caption{Kurt Gödel}
       \label{fig:my_label}
   \end{figure}
@@ -255,7 +256,7 @@ Una gramática formal es una estructura lógico-matemática con un conjunto de r
 
   \end{homeworkProblem}
 
-\begin{homeworkProblem}[14]
+\begin{homeworkProblem}
   ¿Es posible que una misma cadena pertenezca a más de un lenguaje?
   Argumenta tu respuesta. Si la respuesta es afirmativa, proporciona un ejemplo.\\
   \\
@@ -276,9 +277,9 @@ Una gramática formal es una estructura lógico-matemática con un conjunto de r
   lenguaje esta contenido en el primero.\\
 \end{homeworkProblem}
 
+\pagebreak
 
-
-\begin{homeworkProblem}[25]
+\begin{homeworkProblem}
   Utilizando la gramática para el lenguaje de las cadenas de paréntesis
   balanceados decide cuales de las siguientes cadenas están bien construidas
   utilizando sus arboles de derivación:\\
