@@ -310,6 +310,58 @@ En justificación de nuestra respuesta, si tenemos a $(p \wedge q) \wedge r$ es 
 
 \end{homeworkProblem}
 
+\begin{homeworkProblem}
+Coloca los paréntesis en las siguientes expresiones de tal manera que 
+respeten la precedencia de los operadores lógicos \\
+\\
+ \begin{itemize}
+    \item $s \wedge r \wedge q \vee t$\\
+    \solution\\
+    \\
+    $(s \wedge r) \wedge (q \vee t)$
+    
+    
+    \item $a \vee b \vee c \vee d \vee e$
+    \\
+    \solution \\
+    \\
+    $((a \vee b) \vee (c \vee d)) \vee e$
+    
+    \item $p \longrightarrow q \wedge s \longrightarrow r \vee a$
+    \\
+    \solution\\
+    \\
+    $(p \longrightarrow (q \wedge s)) \longrightarrow (r \vee a)$
+    
+    \item $\neg s \longleftrightarrow t \longrightarrow q \longrightarrow p$ \\
+     \\
+     \solution\\
+     \\
+     $(\neg s \longleftrightarrow t) \longrightarrow (q \longrightarrow p)$
+     
+    \item $P(x) \longrightarrow R(n,k) \wedge 1=1 \longrightarrow P(1) \vee P(0) \longleftrightarrow R(0,1)$\\
+    \\
+    \solution\\
+    \\
+    $P(x) \longrightarrow ((R(n,k) \wedge 1=1) \longrightarrow (P(1) \vee P(0)) \longleftrightarrow R(0,1))$
+    
+    \item $P(n) \longrightarrow P(n +1) \longrightarrow P(n+2) \longrightarrow P(n+3) \longrightarrow P(n+4) \longrightarrow
+    P(n+5)$\\
+    \\
+    \solution
+    \\
+    $(((((P(n) \longrightarrow P(n +1)) \longrightarrow P(n+2)) \longrightarrow P(n+3)) \longrightarrow P(n+4)) \longrightarrow
+    P(n+5))$
+    
+    \item $\neg p \vee P(n) \wedge P(n+1) \longrightarrow \neg(p \vee s)\wedge w \longrightarrow R(n,n+1)$\\
+    \\
+    \solution\\
+    \\
+    $(((\neg p \vee P(n)) \wedge P(n+1)) \longrightarrow \neg((p \vee s)\wedge w)) \longrightarrow R(n,n+1)$
+    
+    \end{itemize}
+
+\end{homeworkProblem}
 
 \begin{homeworkProblem} [41]
 Cuántos renglones tiene la tabla de verdad de una proposición de $n$ variables? Justifica tu respuesta. (Si das una demostración formal se te da un punto extra).\\
