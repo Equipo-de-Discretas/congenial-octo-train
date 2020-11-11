@@ -8,6 +8,13 @@
 \usepackage{tikz}
 \usepackage[plain]{algorithm}
 \usepackage{algpseudocode}
+\usepackage[spanish]{babel}
+\usepackage[
+backend=bibtex,
+style=alphabetic,
+sorting=ynt
+]{biblatex}
+\addbibresource{bibl.bib}
 
 \usetikzlibrary{automata,positioning}
 
@@ -144,7 +151,7 @@
 
 \pagebreak
 
-\begin{homeworkProblem} [1]
+\begin{homeworkProblem}
 ¿Qué es la lógica?\\
 \\
 \solution\\
@@ -152,24 +159,24 @@
 La lógica es la disciplina la cual se encarga del estudio del razonamiento, por medio de reglas y técnicas determina si un argumento es válido o no.
 \end{homeworkProblem}
 
-\begin{homeworkProblem}[2]
+\begin{homeworkProblem}
 Menciona un ejemplo del uso de la lógica en Ciencias de la Computación.\\
 \\
 \solution\\
 \\
-El nivel menos abstracto dentro de una computadora está constituido por circuitos electrónicos que responden a diferentes señales eléctricas, siguiendo los patrones de la \textbf{lógica booleana}, estas compuertas logicas devuelven un valor dependiendo de las entradas que le dan al sistema. Existen 8 compuetas lógicas, las cueles son: AND, OR, Inverter, Buffer, NAND, NOR, XOR y XNOR.
+El nivel menos abstracto dentro de una computadora está constituido por circuitos electrónicos que responden a diferentes señales eléctricas, siguiendo los patrones de la \textbf{lógica booleana}, estas compuertas lógicas devuelven un valor dependiendo de las entradas que le dan al sistema. Existen 8 compuertas lógicas, las cueles son: AND, OR, Inverter, Buffer, NAND, NOR, XOR y XNOR.
 \end{homeworkProblem}
 
-\begin{homeworkProblem} [3]
+\begin{homeworkProblem}
 ¿Qué es una proposición?\\
 \\
 \solution\\
 \\
-Es un enunciado del cual se puede conocer su valor de verdad, es decir; podemos determinar si es verdadero o falso. 
+Es un enunciado del cual se puede conocer su valor de verdad, es decir; podemos determinar si es verdadero o falso.
 Con el contexto se puede determinar si un enunciado es una proposición, si no hay contexto entonces no es una proposición y las oraciones imperativas no son proposiciones.
 \end{homeworkProblem}
 
-\begin{homeworkProblem} [4]
+\begin{homeworkProblem}
 ¿Qué es un predicado?\\
 \\
 \solution\\
@@ -178,15 +185,17 @@ Un predicado es una expresión lingüística que puede conectarse con una o vari
 Los predicados en lógica matemática también son tratados como funciones
 \end{homeworkProblem}
 
-\begin{homeworkProblem} [5]
+\pagebreak
+
+\begin{homeworkProblem}
 ¿Qué es un argumento lógico?\\
 \\
 \solution\\
 \\
-Un argumento lógico es una secuencia de proposiciones seguidos de una conclusión. Y un argumento es considerado correcto o válido si es una tautología.  
+Un argumento lógico es una secuencia de proposiciones seguidos de una conclusión. Y un argumento es considerado correcto o válido si es una tautología.
 \end{homeworkProblem}
 
-\begin{homeworkProblem} [6]
+\begin{homeworkProblem}
 ¿Qué es una tautología?\\
 \\
 \solution\\
@@ -194,7 +203,7 @@ Un argumento lógico es una secuencia de proposiciones seguidos de una conclusi�
 Es una fórmula que siempre se evalúa como verdadera, para todas las posibles asignaciones de sus variables (la columna resultado de su tabla de verdad tiene sólo unos).
 \end{homeworkProblem}
 
-\begin{homeworkProblem} [7]
+\begin{homeworkProblem}
 ¿Qué es una contradicción?\\
 \\
 \solution\\
@@ -202,7 +211,7 @@ Es una fórmula que siempre se evalúa como verdadera, para todas las posibles a
 Es cuando una fórmula se evalúa como falsa en todos sus estados posibles (la columna resultado de su tabla de verdad tiene sólo ceros).
 \end{homeworkProblem}
 
-\begin{homeworkProblem} [8]
+\begin{homeworkProblem}
 ¿Qué es una contingencia? (En Lógica)\\
 \\
 \solution\\
@@ -210,15 +219,17 @@ Es cuando una fórmula se evalúa como falsa en todos sus estados posibles (la c
 Es cuando una fórmula no es tautología ni contradicción.
 \end{homeworkProblem}
 
-\begin{homeworkProblem} [9]
+\begin{homeworkProblem}
 ¿Qué es la equivalencia? (En lógica)\\
 \\
 \solution\\
 \\
-Dos proposiciones o fórmulas lógicas son lógicamente equivalentes cuando toman el mismo valor de verdad en todas las posibles asignaciones de valores de sus variables, es decir; las tablas de verdad de las dos proposiciones dan el mismo resultado.  
+Dos proposiciones o fórmulas lógicas son lógicamente equivalentes cuando toman el mismo valor de verdad en todas las posibles asignaciones de valores de sus variables, es decir; las tablas de verdad de las dos proposiciones dan el mismo resultado.
 \end{homeworkProblem}
 
-\begin{homeworkProblem} [10]
+\pagebreak
+
+\begin{homeworkProblem}
 ¿Qué es un modelo? (En lógica)\\
 \\
 \solution\\
@@ -227,7 +238,7 @@ Un modelo de un lenguaje formal es una estructura donde las oraciones formales d
 La idea es que un lenguaje formal es simplemente un inventario de los signos que vamos a usar, y un modelo de un lenguaje formal es una asignación de significado a cada uno de esos signos.
 \end{homeworkProblem}
 
-\begin{homeworkProblem} [11]
+\begin{homeworkProblem}
 ¿Qué es una premisa?\\
 \\
 \solution\\
@@ -235,7 +246,7 @@ La idea es que un lenguaje formal es simplemente un inventario de los signos que
 Una premisa es cada una de las proposiciones anteriores a la conclusión de argumento.En un argumento válido, las premisas implican la conclusión, pero esto no es necesario para que una proposición sea una premisa: lo único relevante es su lugar en el argumento, no su rol. Al ser proposiciones, las premisas siempre afirman o niegan algo que puede ser verdadero o falso.
 \end{homeworkProblem}
 
-\begin{homeworkProblem} [12]
+\begin{homeworkProblem}
 ¿Qué es una conclusión?\\
 \\
 \solution\\
@@ -243,7 +254,9 @@ Una premisa es cada una de las proposiciones anteriores a la conclusión de argu
 Una conclusión es una proposición al final de un argumento, después de las premisas. Con los criterios adecuados e pude afirmar que si las premisas son verdaderas entonces la conclusión también tiene que serlo necesariamente.
 \end{homeworkProblem}
 
-\begin{homeworkProblem} [13]
+\pagebreak
+
+\begin{homeworkProblem}
 Da ejemplo de 5 expresiones (en lenguaje natural) que sean proposiciones y 3 que no lo sean.\\
 \\
 \solution\\
@@ -264,39 +277,37 @@ Expresiones que \textbf{no} son proposiciones:
 \end{enumerate}
 \end{homeworkProblem}
 
-\begin{homeworkProblem} [14]
-Identifica en los siguientes enunciados cuáles son las proposiciones 
+\begin{homeworkProblem}
+Identifica en los siguientes enunciados cuáles son las proposiciones
 atómicas y tradúcelas asignando utilizando variables proposicionales y los operadores que sean necesarios:
-        
+
   \begin{enumerate}
       \item El libro es rojo.
       \item Juan y Mariana tienen sed.
       \item Como está muy nublado, va a llover. Por lo tanto no saldremos.
       \item El lápiz es rojo o es amarillo.
   \end{enumerate}
-\\
-\solution\\
-\\
 
 \end{homeworkProblem}
 
 
 \begin{homeworkProblem} [41]
 Cuántos renglones tiene la tabla de verdad de una proposición de $n$ variables? Justifica tu respuesta. (Si das una demostración formal se te da un punto extra).\\
-\\
-\solution\\
-\\
 
 \end{homeworkProblem}
 
+\pagebreak
 
-\section{Bibliografía}
-\begin{itemize}
-\item https://www.ecured.cu/Logicamatematica
-\item https://es.wikipedia.org/wiki/PuertalConjuntodepuertasl
-\item https://sites.google.com/site/mathematicasdiscretesolutions/logica-de-po
-\item https://www.fing.edu.uy/~amiquel/fundamentos/teoriasymodelos.pdf
-\item https://es.wikipedia.org/wiki/Premisa#:~:text=Enlogicaunapremisaelargumento
-\end{itemize}
+\cite{miquelteorias,lodepe}
+\printbibliography
+
+%\section{Bibliografía}
+%\begin{itemize}
+%\item https://www.ecured.cu/Logicamatematica % me manda 404
+%\item https://es.wikipedia.org/wiki/PuertalConjuntodepuertasl % no encontre la pagina de esto
+%\item https://sites.google.com/site/mathematicasdiscretesolutions/logica-de-po
+%\item https://www.fing.edu.uy/~amiquel/fundamentos/teoriasymodelos.pdf
+%\item https://es.wikipedia.org/wiki/Premisa\#:\~ :text=Enlogicaunapremisaelargumento
+%\end{itemize}
 
 \end{document}
