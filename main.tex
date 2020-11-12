@@ -415,6 +415,48 @@ En justificación de nuestra respuesta, si tenemos a $(p \wedge q) \wedge r$ es 
 \end{homeworkProblem}
 
 \begin{homeworkProblem}
+Evalúa las siguientes fórmulas dada la interpretación $I$ tal que $I(p) = 1, I(q) = 0, I(r) = 1$: \\
+\\
+\solution \\
+\\
+\begin{enumerate}
+            \item $p \vee \neg p$\\
+            \solution
+            \\
+            Sustituimos los valores de $p$ en la formula:\\
+            $(1) \vee \neg (1)$\\ 
+            $(1) \vee (0)$ $=$ $1$, por tanto esta formula es verdadera, ya que la disyunción es verdadera siempre y cuando haya al menos un 1 en el enunciado 
+            \item $p \wedge \neg p$\\
+            \solution
+            \\
+            Sustituimos nuevamente a $p$ en la formula:\\
+            $(1) \wedge \neg (1)$\\
+            $(1) \wedge (0)$ $=$ $0$, esta formula es falsa ya que la conjunción unicamente es verdadera cuando ambas partes son verdaderas.
+            
+            \item $p \longleftrightarrow \neg \neg p$\\
+            \solution
+            \\
+            Sustituimos nuevamente a $p$ en la formula: \\
+            $(1) \longleftrightarrow \neg \neg (1)$ \\
+            $(1) \longleftrightarrow (1)$ $=$ $1$, como vemos que la doble implicacion es verdadera unicamente cuando ambas partes tienen el mismo valor de verdad, el resultado es $1$. 
+            
+            \item $(p \longrightarrow q) \longrightarrow (p \vee q)$\\
+            \solution
+            \\
+            Ahora sustituimos a $p$ y $q$ en la formula: \\
+            $((1) \longrightarrow (0)) \longrightarrow ((1) \vee (0))$ \\
+             $((0)) \longrightarrow ((1))$ $=$ $1$, aquí como vemos la implicación es verdadera, ya que solo se considera falsa cuando su antecedente es verdadera y su consecuente es falso.
+             
+            \item $p \longrightarrow (q \longleftrightarrow r)$\\
+            \solution
+            \\
+            Sustituimos los valores de $p$, $q$ y $r$ en la formula:\\
+            $(1) \longrightarrow ((0) \longleftrightarrow (1))$\\
+            $(1) \longrightarrow ((0))$ $=$ $0$, esta formula es falsa porque como ya habiamos dicho antes, la implicación es falsa cuando su antecedente es verdadero y su consecuente falso.
+        \end{enumerate}
+\end{homeworkProblem}
+
+\begin{homeworkProblem}
 En las siguientes proposiciones identifica las variables libres, las 
     variables ligadas y los alcances de los cuantificadores. No omitas
     el introducir paréntesis donde sea necesario. \\
