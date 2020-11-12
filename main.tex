@@ -6,6 +6,7 @@
 \usepackage{amsthm}
 \usepackage{amsfonts}
 \usepackage{tikz}
+\usepackage{csquotes}
 \usepackage[plain]{algorithm}
 \usepackage{algpseudocode}
 \usepackage[spanish]{babel}
@@ -15,6 +16,10 @@ style=alphabetic,
 sorting=ynt
 ]{biblatex}
 \addbibresource{bibl.bib}
+\usepackage{float}
+\restylefloat{table}
+\usepackage{hyperref}
+\usepackage[utf8]{inputenc}
 
 \usetikzlibrary{automata,positioning}
 
@@ -324,10 +329,10 @@ En justificación de nuestra respuesta, si tenemos a $(p \wedge q) \wedge r$ es 
 
 \end{homeworkProblem}
 
+
 \begin{homeworkProblem}
-Coloca los paréntesis en las siguientes expresiones de tal manera que
-respeten la precedencia de los operadores lógicos \\
-\\
+  Coloca los paréntesis en las siguientes expresiones de tal manera que
+  respeten la precedencia de los operadores lógicos \\
  \begin{itemize}
     \item $s \wedge r \wedge q \vee t$\\
     \solution\\
@@ -377,7 +382,39 @@ respeten la precedencia de los operadores lógicos \\
 
 \end{homeworkProblem}
 
-\begin{homeworkProblem} [41]
+\begin{homeworkProblem}[29]
+  Justifica por qué no son equivalentes las siguientes expresiones
+
+    \begin{table}[H]
+        \centering
+        \begin{tabular}{c c c}
+        $\forall x \exists y (y+x = 0)$ & y &$ \exists y \forall x(y+x = 0)$  \\
+        \end{tabular}
+    \end{table}
+
+    \solution\\
+    \\
+    Cambiar los cuantificadores, no es normalmente aceptado, los dos enunciados
+    son validos, pero no quiere eso decir que son equivalentes, o congruentes,
+    dado esto, podemos ver que al cambiar $\forall$ y $\exists$ no llega a un
+    resultado congruente:\\
+      \[
+        \forall x \exists y (y+x = 0)  \not\equiv  \exists y \forall x(y+x = 0)
+      \]
+  Por ejemplo:\\
+  \\
+  Sea $Q(x,y)$  como "x quiere a y". Siendo of $x,y: personas$
+
+    \begin{itemize}
+    \item El lado izquierdo seria $\forall x\exists yQ(x,y)$ : "Todos quieren a alguien". Toda persona quiere a alguna persona.
+
+    \item El lado derecho, siendo: $\exists y\forall xQ(x,y)$ : "Existe alguna persona que queire a todos". Alguien quiere a todas las personas.
+    \end{itemize}
+
+    Por esto diria que no son lo mismo.
+\end{homeworkProblem}
+
+\begin{homeworkProblem}[41]
 Cuántos renglones tiene la tabla de verdad de una proposición de $n$ variables? Justifica tu respuesta. (Si das una demostración formal se te da un punto extra).\\
 \\
 \solution\\
@@ -386,6 +423,29 @@ Toda tabla de verdad tiene $2^n$ renglones, donde la $n$ corresponde al número 
 Esta fórmula sirve para conocer el número de combinaciones que existen de asignaciones de valores de verdad a cada una de las variables, siempre y cuando se cumpla con que los valores de verdad sean sólo dos -verdadero o falso- y que existan asignaciones de valores de verdad a cada una de las variables.
 \end{homeworkProblem}
 
+\begin{homeworkProblem}
+    Pasa las siguientes expresiones a forma normal disyuntiva.
+        \begin{enumerate}
+            \item $(p \longrightarrow q) \vee (q \longrightarrow p)$
+            \item $(p \longrightarrow r) \wedge (q \longrightarrow r)$
+            \item $(\neg r) \longrightarrow (p \longrightarrow q)$
+            \item $(\neg p) \longleftrightarrow q$
+        \end{enumerate}
+\end{homeworkProblem}
+
+\begin{homeworkProblem}
+  Existe un algoritmo\footnote{De tiempo polinomial} que dada una expresión
+    lógica $\varphi$ de como resultado una expresión $\varphi'$ equivalente pero con
+    la mínima cantidad de variables y operadores posibles?\footnote{Esto quiere decir que
+    $\varphi'$ es mínima.}
+\end{homeworkProblem}
+
+\begin{homeworkProblem}
+  \textbf{Cieto o falso:} Sea $\Gamma$ un conjunto de formulas.
+  Si para cualquier subconjunto de $\Gamma'\subseteq \Gamma$ se tiene que $\Gamma'$
+  es satisfacible, entonces $\Gamma$ es satisfacible.
+  Si no así, muestra un ejemplo. Si la respuesta es si, justifica.
+\end{homeworkProblem}
 \pagebreak
 
 \cite{miquelteorias,lodepe}
