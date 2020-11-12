@@ -315,119 +315,7 @@ En justificación de nuestra respuesta, si tenemos a $(p \wedge q) \wedge r$ es 
 
 \end{homeworkProblem}
 
-\begin{homeworkProblem}[34]
-	Demuestra que con los operadores $\vee$ y $\neg$ es posible construir las tablas
-	de verdad de los operadores $\wedge, \longrightarrow, \longleftrightarrow$
-\end{homeworkProblem}
-\begin{homeworkProblem}
-  Traduce los siguientes argumentos a lógica proposicional y analiza
-  si existe un modelo para cada uno de los argumentos:
-  \begin{enumerate}
-      \item Si se admite la teoría del eterno retorno, se debe admitir la existencia de
-      entidades corpusculares identficables a través del tiempo y que se pueda hablar de un
-      estado del universo definido en cada instante individual. Ahora bien, no es cierto que
-      haya entidades corpusculares permanentes y estados del universo definifo en cada
-      instante. Por tanto, la teoría del eterno retorno es inadmisible.\\
-      $p$: Si se admite la teoría del eterno retorno...\\
-      $q$: Si se admite la existencia de entidades...\\
-      $r$: Se habla de un estado del universo...
-      \item Si los habitantes de Venus invaden la Tierra, entonces los hombres se pondrán
-      nerviosos o las mujeres se entusiasmarán. si los hombres se ponen nerviosos, las
-      mujeres se entusiasmarán. Por tanto, si los habitantes de Venus invaden la Tierra,
-      las mujeres se entusiasmarán.\\
-      $p$: Los habitantes de Venus invaden la Tierra.\\
-      $q$: Los hombres se pondrán nerviosos.\\
-      $r$: Las mujeres se entusiasmarán.\\
-      \item Si las autoridades prohiben fumar en pipa a los feos, entonces los grupos se
-      alzarán indignados porque no venden pipas. Si los guapos no venden pipas o las
-      autoridades no crean nuevos puestos de trabajo, entonces la nación no saldrá de la crisis
-      económica. La nación no sale de la crisis económica y los guapos no venden pipas. Por
-      lo tanto, las autoridades no prohibirán fumar en pipa a los feos.\\
-      $p$: Las autoridades prohiben fumar en pipa a los feos\\
-      $q$: Los guapos se alzarán\\
-      $r$: Los guapos venden pipas\\
-      $s$: Las autoridades crean nuevos empleos\\
-      $t$: La nación saldrá de crisis\\
-  \end{enumerate}
-\end{homeworkProblem}
-\begin{homeworkProblem}
-  Niega de manera correcta las siguientes expresiones:
-      \begin{itemize}
-      \item $\forall x\ (x \leq y \longrightarrow \exists z\ (x + z = y))$
-      \item $\forall \epsilon > 0\  \exists \delta > 0 \ (|x-y|<\delta \longrightarrow
-      |f(x) -f(y)| < \epsilon)$
-      \item $|x - y + z| = 4\longrightarrow  \exists y\ \forall z\ R(y,z)$
-      \item $\forall x \in \mathbf{N}\ \exists y \in \mathbf{N}\ suc(x) = y$
-  \end{itemize}
-\end{homeworkProblem}
-\begin{homeworkProblem}
-  En las siguientes proposiciones identifica las variables libres, las
-    variables ligadas y los alcances de los cuantificadores. No omitas
-    el introducir paréntesis donde sea necesario.
-    \begin{itemize}
-        \item $\forall x\ x \leq y \longrightarrow \exists z\ x + z = y$
-        \item $\forall \epsilon > 0\  \exists \delta > 0 (|x-y|<\delta \longrightarrow
-        |f(x) -f(y)| < \epsilon$)
-        \item $\forall x \in \mathbf{N}\ \exists y \in \mathbf{N}\ suc(x) = y$
-        \item $\exists x \forall y \exists a(z + 2w = 4y \vee 2s = y^3+7)$
-        \item $\forall \epsilon(\epsilon > 0 \longrightarrow \exists \delta > 0 \vee \epsilon + y = x)$
-        \item $\forall x \forall y \exists z R(x,n) \longrightarrow P(z)$
-        \item $P(0) \wedge \forall k \ (P(k) \longrightarrow P(suc(k))) \longrightarrow \forall n  P(n)$
-    \end{itemize}
-\end{homeworkProblem}
-\begin{homeworkProblem}
-    Determina si las siguientes fórmulas son satisfacibles. Da un modelo para
-    cada fórmula que sí lo sea.
-        \begin{enumerate}
-            \item $p \wedge q \longleftrightarrow \neg p \wedge q$
-            \item $(\neg p \vee q) \wedge p$
-            \item $p \wedge q \wedge \neg p$
-            \item $(p \longrightarrow q) \wedge (q \longrightarrow p)$
-        \end{enumerate}
-\end{homeworkProblem}
-\begin{homeworkProblem}
-    Determina si los siguientes conjuntos son satisfacibles.
-        \begin{enumerate}
-            \item $\Gamma = \{(\neg q \wedge r) \vee p \vee q, p \wedge r\}$
-            \item $\Gamma = \{p \wedge \neg q, \neg(q \vee \neg p)\}$
-            \item $\Gamma = \{q \vee r \vee s, \neg(q \vee r), \neg(r \vee s), \neg(s \vee q)\}$
-            \item $\Gamma = \{\neg(p \wedge q) \wedge \neg(p \wedge r), q \vee r, \neg(p \vee \rightarrow \neg r)\}$
-        \end{enumerate}
-\end{homeworkProblem}
-\begin{homeworkProblem}
-  Entras a trabajar a una empresa que se dedica a fabricar
-  proposiciones lógicas y esa empresa se jacta de que todas sus proposiciones
-  son tautologías. Un día estás en una junta con tu jefe y descubren
-  que el computólogo anterior que se encargaba de diseñar las proposiciones
-  no se aseguró de que todas las proposiciones que hizo fuesen tautologías
-  \footnote{No llevó el curso de Estructuras discretas con Alma.}, lo
-  cual va en contra del eslogan de la empresa y temen que la auditoría de la
-  LOGI-Profeco les levante una sanción. Tu jefe te encarga ``arreglar" las
-  proposiciones, con dos condiciones:
-  \begin{itemize}
-      \item No puedes introducir nuevas variables lógicas en las proposiciones
-      \item Si vas a introducir operadores nuevos, la proposición
-      resultante puede exceder en a lo más el doble de operadores de la proposición
-      original
-      \item (Opcional) Si garantizas que toda proposición lógica la arreglas en menos de
-      5 pasos te vuelves el Jefe de la División de Lógica de la empresa
-  \end{itemize}
-  El test que realiza el auditor de LOGI-Profeco consiste en tomar una
-  asignación de valores de verdad aleatoria para el conjunto de variables
-  de la proposición en cuestión (de ahí la razón de que no puedas agregar
-  nuevas variables, ya que el test lo detectaría y automáticamente fallaría)
-  y evaluaría la formula. Describe el proceso que realizarías para
-  solucionar este problema.
-\end{homeworkProblem}
-
-\begin{homeworkProblem}
-
-    ¿Cuántos renglones tiene la tabla de verdad de una proposición de $n$
-    variables? Justifica tu respuesta. (Si das una demostración formal se te da
-    un punto extra).
-\end{homeworkProblem}
-
-\begin{homeworkProblem}    
+\begin{homeworkProblem}[42]
     Pasa las siguientes expresiones a forma normal disyuntiva.
         \begin{enumerate}
             \item $(p \longrightarrow q) \vee (q \longrightarrow p)$
@@ -435,6 +323,18 @@ En justificación de nuestra respuesta, si tenemos a $(p \wedge q) \wedge r$ es 
             \item $(\neg r) \longrightarrow (p \longrightarrow q)$
             \item $(\neg p) \longleftrightarrow q$
         \end{enumerate}
+\end{homeworkProblem}
+\begin{homeworkProblem}
+  Existe un algoritmo\footnote{De tiempo polinomial} que dada una expresión
+    lógica $\varphi$ de como resultado una expresión $\varphi'$ equivalente pero con
+    la mínima cantidad de variables y operadores posibles?\footnote{Esto quiere decir que
+    $\varphi'$ es mínima.}
+\end{homeworkProblem}
+\begin{homeworkProblem}
+    \textbf{Cieto o falso:} Sea $\Gamma$ un conjunto de formulas.
+    Si para cualquier subconjunto de $\Gamma'\subseteq \Gamma$ se tiene que $\Gamma'$
+    es satisfacible, entonces $\Gamma$ es satisfacible.
+    Si no así, muestra un ejemplo. Si la respuesta es si, justifica.
 \end{homeworkProblem}
 
 \pagebreak
