@@ -414,6 +414,76 @@ En justificación de nuestra respuesta, si tenemos a $(p \wedge q) \wedge r$ es 
     Por esto diria que no son lo mismo.
 \end{homeworkProblem}
 
+\begin{homeworkProblem}
+En las siguientes proposiciones identifica las variables libres, las 
+    variables ligadas y los alcances de los cuantificadores. No omitas
+    el introducir paréntesis donde sea necesario. \\
+    \\
+\begin{itemize}
+        \item $\forall x\ x \leq y \longrightarrow \exists z\ x + z = y$\\
+        \\
+        \solution\\
+        En este caso las variables ligadas son $x$ y $z$ ya que estas se encuentran en los cuantificadores; y la variable libre es y ya que no esta siendo cuantificada.\\
+        \\
+        \\
+        El alcance del cuantificador $\forall x$ es $((x \leq y) \longrightarrow \exists z\ (x + z = y))$ y el del $\exists z$
+        es $(x + z = y)$
+        \\
+        
+        \item $\forall \epsilon > 0\  \exists \delta > 0 (|x-y|<\delta \longrightarrow
+        |f(x) -f(y)| < \epsilon$)\\
+        \\
+        \solution\\
+        En este problema nuestras variables ligadas son $\epsilon$ y $\delta$ dejando como variables libres a $x$ y $y$\\
+        \\
+        
+        
+        El alcance del $\forall \epsilon > 0$ es $(\exists \delta > 0 (|x-y|<\delta \longrightarrow
+        |f(x) -f(y)| < \epsilon)$) y el de $\exists \delta > 0$ es $(|x-y|<\delta \longrightarrow
+        |f(x) -f(y)| < \epsilon)$
+        
+        \item $\forall x \in \mathbf{N}\ \exists y \in \mathbf{N}\ suc(x) = y$ \\
+         \\
+         \solution\\
+         En este caso tenemos a todos los variables siendo cuantificadas que aqui son $x$ y $y$.\\
+         \\
+         El alcance del cuantificador $\forall x \in \mathbf{N}$ es $(\exists y \in \mathbf{N}\ (suc(x) = y))$  y el de $\exists y \in \mathbf{N}$ es $(suc(x) = y)$
+        
+         
+        \item $\exists x \forall y \exists a(z + 2w = 4y \vee 2s = y^3+7)$ \\
+        \\
+        \solution\\
+        Nuestras variables ligadas son $x$, $y$ y $a$ y nuestras variables libres son $z$, $w$ y $s$. \\
+        
+        El alcance del cuantificador $\exists x$ es $\forall y \exists a(z + 2w = 4y \vee 2s = y^3+7)$, el de $\forall y$ es $\exists a(z + 2w = 4y \vee 2s = y^3+7)$ y el de $\exists a$ es $(z + 2w = 4y \vee 2s = y^3+7)$.
+        
+        \item $\forall \epsilon(\epsilon > 0 \longrightarrow \exists \delta > 0 \vee \epsilon + y = x)$ \\
+        \\
+        \solution\\
+        Las variables ligadas son $\epsilon$ y $\delta$ mientras que las libres son $x$ y $y$\\
+        \\
+        El alcance de $\forall \epsilon$ es $(\epsilon > 0 \longrightarrow ((\exists \delta > 0) \vee (\epsilon + y = x)))$ y el de $(\exists \delta > 0)$ sería unicamente el ya que va seguido de una disyunción.
+        
+        \item $\forall x \forall y \exists z R(x,n) \longrightarrow P(z)$\\
+        \\
+        \solution\\
+        \\
+        En este problema las variables ligadas son $x$, $y$ y $z$ y la variable libre sería unicamente la $n$ \\
+        \\
+        En este el alcance de $\forall x$ es $\forall y \exists z (R(x,n) \longrightarrow P(z))$, el de $\forall y$ es $\exists z (R(x,n) \longrightarrow P(z))$ y el de $\exists z$ es $(R(x,n) \longrightarrow P(z))$.  \\
+        
+        \item $P(0) \wedge \forall k \ (P(k) \longrightarrow P(suc(k))) \longrightarrow \forall n  P(n)$\\
+        
+        \solution
+        \\
+        En este caso las variables ligadas son $k$ y $n$ y no hay ninguna variable libre.\\
+        \\
+        
+        En el caso de $\forall k$ su alcance seria  $\ (P(k) \longrightarrow P(suc(k))) \longrightarrow \forall n  P(n)$, mientras que el de $\forall n$ es solo $P(n)$ 
+        
+    \end{itemize}
+\end{homeworkProblem}
+
 \begin{homeworkProblem}[41]
 Cuántos renglones tiene la tabla de verdad de una proposición de $n$ variables? Justifica tu respuesta. (Si das una demostración formal se te da un punto extra).\\
 \\
