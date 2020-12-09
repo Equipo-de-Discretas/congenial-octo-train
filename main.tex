@@ -157,415 +157,76 @@ sorting=ynt
 \pagebreak
 
 \begin{homeworkProblem}
-¿Qué es la lógica?\\
+¿Qué es una definición recursiva?\\
 \\
 \solution\\
 \\
-La lógica es la disciplina la cual se encarga del estudio del razonamiento, por medio de reglas y técnicas determina si un argumento es válido o no.
+Una definición recursiva (o definición inductiva) en lógica matemática y ciencias de la computación se utiliza para definir los elementos de un conjunto en términos de otros elementos del conjunto.\\
+
+La definición recursiva de una función define los valores de las funciones para algunas entradas en términos de los valores de la misma función para otras entradas. \\
 \end{homeworkProblem}
 
 \begin{homeworkProblem}
-Menciona un ejemplo del uso de la lógica en Ciencias de la Computación.\\
+¿Qué quiere decir que un conjunto sea recursivo?\\
 \\
 \solution\\
 \\
-El nivel menos abstracto dentro de una computadora está constituido por circuitos electrónicos que responden a diferentes señales eléctricas, siguiendo los patrones de la \textbf{lógica booleana}, estas compuertas lógicas devuelven un valor dependiendo de las entradas que le dan al sistema. Existen 8 compuertas lógicas, las cueles son: AND, OR, Inverter, Buffer, NAND, NOR, XOR y XNOR.
+En teoría de la computabilidad, un conjunto B es recursivo, computable o decidible (recurrente primitivo) cuando su función característica es computable total. Esto significa que la función característica, la cual es un predicado, toma valor 1 (cierto) para todos los elementos del conjunto y 0 (falso) para el resto.\\
+\\
 \end{homeworkProblem}
 
 \begin{homeworkProblem}
-¿Qué es una proposición?\\
+¿De qué manera se relacionan la inducción y la recursión?\\
 \\
 \solution\\
 \\
-Es un enunciado del cual se puede conocer su valor de verdad, es decir; podemos determinar si es verdadero o falso.
-Con el contexto se puede determinar si un enunciado es una proposición, si no hay contexto entonces no es una proposición y las oraciones imperativas no son proposiciones.
+La recursividad y la inducción —su base matemática— son dos pilares fundamentales en la
+formación y en la praxis de un informática y en particular en las de un ingeniero de software.
+Cuando se aplica a algoritmos, la recursión se define como una técnica general de resolución de
+problemas que consiste en descomponer un problema dado en subproblemas de tamaño menor
+pero con la misma estructura que el problema original. La filosofía opuesta es la iteración,
+donde se resuelve un problema aplicando procedimientos de solución repetidamente y que no
+aprovechan la posible estructura interna del problema. La recursión aparece en otros campos
+de la informática aparte de la algorítmica, por ejemplo, en la definición de estructuras de datos.
+Sin embargo, la recursión es algo mucho más abstracto que eso y se refiere a objetos que tienen
+una estructura autorreferencial, esto es, una estructura compuesta de las mismas estructuras
+a escala menor. La recursión es, en su máximo esplendor, una manera de resolver problemas.
+Esta consiste en detectar en primer lugar esa estructura recursiva y explotar esa estructura
+para resolverlo eficiente y elegantemente. \\
 \end{homeworkProblem}
 
 \begin{homeworkProblem}
-¿Qué es un predicado?\\
+Enuncia el principio de inducción para las \emph{listas}.
 \\
 \solution\\
 \\
-Un predicado es una expresión lingüística que puede conectarse con una o varias otras expresiones para formar una oración. Por ejemplo, en la oración <<Marte es un planeta>>, la expresión <<es un planeta>> es un predicado que se conecta con la expresión <<Marte>> para formar una oración; entonces, un predicado expresara la(s) propiedad(es) que cumple el sujeto.
-Los predicados en lógica matemática también son tratados como funciones.
-\end{homeworkProblem}
-
-\pagebreak
-
-\begin{homeworkProblem}
-¿Qué es un argumento lógico?\\
-\\
-\solution\\
-\\
-Un argumento lógico es una secuencia de proposiciones seguidos de una conclusión. Y un argumento es considerado correcto o válido si es una tautología.
-\end{homeworkProblem}
-
-\begin{homeworkProblem}
-¿Qué es una tautología?\\
-\\
-\solution\\
-\\
-Es una fórmula que siempre se evalúa como verdadera, para todas las posibles asignaciones de sus variables (la columna resultado de su tabla de verdad tiene sólo unos).
-\end{homeworkProblem}
-
-\begin{homeworkProblem}
-¿Qué es una contradicción?\\
-\\
-\solution\\
-\\
-Es cuando una fórmula se evalúa como falsa en todos sus estados posibles (la columna resultado de su tabla de verdad tiene sólo ceros).
-\end{homeworkProblem}
-
-\begin{homeworkProblem}
-¿Qué es una contingencia? (En Lógica)\\
-\\
-\solution\\
-\\
-Es cuando una fórmula no es tautología ni contradicción.
-\end{homeworkProblem}
-
-\begin{homeworkProblem}
-¿Qué es la equivalencia? (En lógica)\\
-\\
-\solution\\
-\\
-Dos proposiciones o fórmulas lógicas son lógicamente equivalentes cuando toman el mismo valor de verdad en todas las posibles asignaciones de valores de sus variables, es decir; las tablas de verdad de las dos proposiciones dan el mismo resultado.
-\end{homeworkProblem}
-
-\pagebreak
-
-\begin{homeworkProblem}
-¿Qué es un modelo? (En lógica)\\
-\\
-\solution\\
-\\
-Un modelo de un lenguaje formal es una estructura donde las oraciones formales de la teoría (es decir, una cadena de signos matemáticos) son interpretables y por tanto las oraciones pueden considerarse como afirmaciones sobre el modelo. Si un modelo para un lenguaje formal satisface además una oración o una teoría (conjunto de oraciones), se llama modelo de una oración o teoría.\\
-La idea es que un lenguaje formal es simplemente un inventario de los signos que vamos a usar, y un modelo de un lenguaje formal es una asignación de significado a cada uno de esos signos.
-\end{homeworkProblem}
-
-\begin{homeworkProblem}
-¿Qué es una premisa?\\
-\\
-\solution\\
-\\
-Una premisa es cada una de las proposiciones anteriores a la conclusión de argumento.En un argumento válido, las premisas implican la conclusión, pero esto no es necesario para que una proposición sea una premisa: lo único relevante es su lugar en el argumento, no su rol. Al ser proposiciones, las premisas siempre afirman o niegan algo que puede ser verdadero o falso.
-\end{homeworkProblem}
-
-\begin{homeworkProblem}
-¿Qué es una conclusión?\\
-\\
-\solution\\
-\\
-Una conclusión es una proposición al final de un argumento, después de las premisas. Con los criterios adecuados e pude afirmar que si las premisas son verdaderas entonces la conclusión también tiene que serlo necesariamente.
-\end{homeworkProblem}
-
-\pagebreak
-
-\begin{homeworkProblem}
-Da ejemplo de 5 expresiones (en lenguaje natural) que sean proposiciones y 3 que no lo sean.\\
-\\
-\solution\\
-\\
-Expresiones que son proposiciones:
-\begin{enumerate}
-    \item Cuatro es un número par.
-    \item El rombo es un equilátero.
-    \item Los leones no son voluminosos.
-    \item Hoy es miércoles.
-    \item La Tierra es plana.
-\end{enumerate}
-Expresiones que \textbf{no} son proposiciones:
-\begin{enumerate}
-    \item ¡Hola!
-    \item Limpia la escalera.
-    \item ¿Qué cayo del cielo?
-\end{enumerate}
-\end{homeworkProblem}
-
-\begin{homeworkProblem}
-Identifica en los siguientes enunciados cuáles son las proposiciones
-atómicas y tradúcelas asignando utilizando variables proposicionales y los operadores que sean necesarios:\\
-\\
-\solution\\
-  \begin{enumerate}
-      \item El libro es rojo.\\
-      La proposición atómica es <<El libro es rojo>>, no es posible separarla más. A esta proposición le asignaría la letra r y se quedaría como tal, ya que no hay operadores que agregar.\\
-
-      \item Juan y Mariana tienen sed.\\
-      Las proposiciones atómicas son <<Juan tiene sed>> representada con la variable p y <<Mariana tiene sed>> representada con q.\\
-      Se traduciría como: \\
-      $p \wedge \ q$
-
-      \item Como está muy nublado, va a llover. Por lo tanto no saldremos.\\
-      Las proposiciones atómicas son <<Como está muy nublado>> representada con a, <<Va a llover>> representada con b y <<Por lo tanto \textbf{no} saldremos>> representada como $\neg c$. \\
-      Se \ traduciria \ como:\\
-      $(a \rightarrow b) \rightarrow \neg c$
-
-      \item El lápiz es rojo o es amarillo.\\
-      Las proposiciones atómicas son <<El lápiz es rojo>> representada como k y <<El lápiz es amarillo>> como l. \\
-      Se traduciría como: \\
-      $k \vee l$
-  \end{enumerate}
-
-\end{homeworkProblem}
-
-\begin{homeworkProblem}
- Menciona los operadores lógicos que cumplen con la propiedad conmutativa justificando tu respuesta. \\
-\\
-\solution\\
-\\
-Los operadores logicos que cumplen con esta propiedad son la conjunción: $\wedge$, la disyunción: $\vee$ y la doble implicación: $\longleftrightarrow$; por ejemplo supongamos que expresar $p \wedge q$, es lo mismo que expresar $q \wedge p$, lo mismo para la disyunción y la doble implicación, tenemos $p \vee q$ es igual a $q \vee p$, y por ultimo $p \longleftrightarrow q$ es igual a $q \longleftrightarrow p$
-\end{homeworkProblem}
-
-\begin{homeworkProblem}
-Menciona los operadores lógicos que cumplen con la propiedad asociativa justificando tu respuesta. \\
-\\
-\solution\\
-\\
-Los operadores logicos que vendrían cumpliendo esta propiedad son los mismos que del problema anterior y sabemos que la asociatividad es de la forma: $(a + b)+c$ = $a + (b + c)$.
-\\
-En justificación de nuestra respuesta, si tenemos a $(p \wedge q) \wedge r$ es lo mismo que expresar $p \wedge (q \wedge r)$, y si tenemos $(p \vee q) \vee r$ es igual que $p \vee (q \vee r)$, y aplicamos lo mismo para la doble implicación $(p \Longleftrightarrow q) \Longleftrightarrow r$ $=$ $p \Longleftrightarrow (q \Longleftrightarrow r)$
-
-
-\end{homeworkProblem}
-
-
-\begin{homeworkProblem}
-  Coloca los paréntesis en las siguientes expresiones de tal manera que
-  respeten la precedencia de los operadores lógicos \\
- \begin{itemize}
-    \item $s \wedge r \wedge q \vee t$\\
-    \solution\\
-    \\
-    $(s \wedge r) \wedge (q \vee t)$
-
-
-    \item $a \vee b \vee c \vee d \vee e$
-    \\
-    \solution \\
-    \\
-    $((a \vee b) \vee (c \vee d)) \vee e$
-
-    \item $p \longrightarrow q \wedge s \longrightarrow r \vee a$
-    \\
-    \solution\\
-    \\
-    $(p \longrightarrow (q \wedge s)) \longrightarrow (r \vee a)$
-
-    \item $\neg s \longleftrightarrow t \longrightarrow q \longrightarrow p$ \\
-     \\
-     \solution\\
-     \\
-     $(\neg s \longleftrightarrow t) \longrightarrow (q \longrightarrow p)$
-
-    \item $P(x) \longrightarrow R(n,k) \wedge 1=1 \longrightarrow P(1) \vee P(0) \longleftrightarrow R(0,1)$\\
-    \\
-    \solution\\
-    \\
-    $P(x) \longrightarrow ((R(n,k) \wedge 1=1) \longrightarrow (P(1) \vee P(0)) \longleftrightarrow R(0,1))$
-
-    \item $P(n) \longrightarrow P(n +1) \longrightarrow P(n+2) \longrightarrow P(n+3) \longrightarrow P(n+4) \longrightarrow
-    P(n+5)$\\
-    \\
-    \solution
-    \\
-    $(((((P(n) \longrightarrow P(n +1)) \longrightarrow P(n+2)) \longrightarrow P(n+3)) \longrightarrow P(n+4)) \longrightarrow
-    P(n+5))$
-
-    \item $\neg p \vee P(n) \wedge P(n+1) \longrightarrow \neg(p \vee s)\wedge w \longrightarrow R(n,n+1)$\\
-    \\
-    \solution\\
-    \\
-    $(((\neg p \vee P(n)) \wedge P(n+1)) \longrightarrow \neg((p \vee s)\wedge w)) \longrightarrow R(n,n+1)$
-
-    \end{itemize}
-
-\end{homeworkProblem}
-
-\begin{homeworkProblem}[29]
-  Justifica por qué no son equivalentes las siguientes expresiones
-
-    \begin{table}[H]
-        \centering
-        \begin{tabular}{c c c}
-        $\forall x \exists y (y+x = 0)$ & y &$ \exists y \forall x(y+x = 0)$  \\
-        \end{tabular}
-    \end{table}
-
-    \solution\\
-    \\
-    Cambiar los cuantificadores, no es normalmente aceptado, los dos enunciados
-    son validos, pero no quiere eso decir que son equivalentes, o congruentes,
-    dado esto, podemos ver que al cambiar $\forall$ y $\exists$ no llega a un
-    resultado congruente:\\
-      \[
-        \forall x \exists y (y+x = 0)  \not\equiv  \exists y \forall x(y+x = 0)
-      \]
-  Por ejemplo:\\
-  \\
-  Sea $Q(x,y)$  como "x quiere a y". Siendo of $x,y: personas$
-
-    \begin{itemize}
-    \item El lado izquierdo seria $\forall x\exists yQ(x,y)$ : "Todos quieren a alguien". Toda persona quiere a alguna persona.
-
-    \item El lado derecho, siendo: $\exists y\forall xQ(x,y)$ : "Existe alguna persona que queire a todos". Alguien quiere a todas las personas.
-    \end{itemize}
-
-    Por esto diria que no son lo mismo.
-\end{homeworkProblem}
-
-\begin{homeworkProblem}
-Evalúa las siguientes fórmulas dada la interpretación $I$ tal que $I(p) = 1, I(q) = 0, I(r) = 1$: \\
-\\
-\solution \\
-\\
-\begin{enumerate}
-            \item $p \vee \neg p$\\
-            \solution
-            \\
-            Sustituimos los valores de $p$ en la formula:\\
-            $(1) \vee \neg (1)$\\ 
-            $(1) \vee (0)$ $=$ $1$, por tanto esta formula es verdadera, ya que la disyunción es verdadera siempre y cuando haya al menos un 1 en el enunciado 
-            \item $p \wedge \neg p$\\
-            \solution
-            \\
-            Sustituimos nuevamente a $p$ en la formula:\\
-            $(1) \wedge \neg (1)$\\
-            $(1) \wedge (0)$ $=$ $0$, esta formula es falsa ya que la conjunción unicamente es verdadera cuando ambas partes son verdaderas.
-            
-            \item $p \longleftrightarrow \neg \neg p$\\
-            \solution
-            \\
-            Sustituimos nuevamente a $p$ en la formula: \\
-            $(1) \longleftrightarrow \neg \neg (1)$ \\
-            $(1) \longleftrightarrow (1)$ $=$ $1$, como vemos que la doble implicacion es verdadera unicamente cuando ambas partes tienen el mismo valor de verdad, el resultado es $1$. 
-            
-            \item $(p \longrightarrow q) \longrightarrow (p \vee q)$\\
-            \solution
-            \\
-            Ahora sustituimos a $p$ y $q$ en la formula: \\
-            $((1) \longrightarrow (0)) \longrightarrow ((1) \vee (0))$ \\
-             $((0)) \longrightarrow ((1))$ $=$ $1$, aquí como vemos la implicación es verdadera, ya que solo se considera falsa cuando su antecedente es verdadera y su consecuente es falso.
-             
-            \item $p \longrightarrow (q \longleftrightarrow r)$\\
-            \solution
-            \\
-            Sustituimos los valores de $p$, $q$ y $r$ en la formula:\\
-            $(1) \longrightarrow ((0) \longleftrightarrow (1))$\\
-            $(1) \longrightarrow ((0))$ $=$ $0$, esta formula es falsa porque como ya habiamos dicho antes, la implicación es falsa cuando su antecedente es verdadero y su consecuente falso.
-        \end{enumerate}
-\end{homeworkProblem}
-
-\begin{homeworkProblem}
-En las siguientes proposiciones identifica las variables libres, las 
-    variables ligadas y los alcances de los cuantificadores. No omitas
-    el introducir paréntesis donde sea necesario. \\
-    \\
+Si queremos hacer inducción sobre listas, tomamos en cuenta que:
 \begin{itemize}
-        \item $\forall x\ x \leq y \longrightarrow \exists z\ x + z = y$\\
-        \\
-        \solution\\
-        En este caso las variables ligadas son $x$ y $z$ ya que estas se encuentran en los cuantificadores; y la variable libre es y ya que no esta siendo cuantificada.\\
-        \\
-        \\
-        El alcance del cuantificador $\forall x$ es $((x \leq y) \longrightarrow \exists z\ (x + z = y))$ y el del $\exists z$
-        es $(x + z = y)$
-        \\
-        
-        \item $\forall \epsilon > 0\  \exists \delta > 0 (|x-y|<\delta \longrightarrow
-        |f(x) -f(y)| < \epsilon$)\\
-        \\
-        \solution\\
-        En este problema nuestras variables ligadas son $\epsilon$ y $\delta$ dejando como variables libres a $x$ y $y$\\
-        \\
-        
-        
-        El alcance del $\forall \epsilon > 0$ es $(\exists \delta > 0 (|x-y|<\delta \longrightarrow
-        |f(x) -f(y)| < \epsilon)$) y el de $\exists \delta > 0$ es $(|x-y|<\delta \longrightarrow
-        |f(x) -f(y)| < \epsilon)$
-        
-        \item $\forall x \in \mathbf{N}\ \exists y \in \mathbf{N}\ suc(x) = y$ \\
-         \\
-         \solution\\
-         En este caso tenemos a todos los variables siendo cuantificadas que aqui son $x$ y $y$.\\
-         \\
-         El alcance del cuantificador $\forall x \in \mathbf{N}$ es $(\exists y \in \mathbf{N}\ (suc(x) = y))$  y el de $\exists y \in \mathbf{N}$ es $(suc(x) = y)$
-        
-         
-        \item $\exists x \forall y \exists a(z + 2w = 4y \vee 2s = y^3+7)$ \\
-        \\
-        \solution\\
-        Nuestras variables ligadas son $x$, $y$ y $a$ y nuestras variables libres son $z$, $w$ y $s$. \\
-        
-        El alcance del cuantificador $\exists x$ es $\forall y \exists a(z + 2w = 4y \vee 2s = y^3+7)$, el de $\forall y$ es $\exists a(z + 2w = 4y \vee 2s = y^3+7)$ y el de $\exists a$ es $(z + 2w = 4y \vee 2s = y^3+7)$.
-        
-        \item $\forall \epsilon(\epsilon > 0 \longrightarrow \exists \delta > 0 \vee \epsilon + y = x)$ \\
-        \\
-        \solution\\
-        Las variables ligadas son $\epsilon$ y $\delta$ mientras que las libres son $x$ y $y$\\
-        \\
-        El alcance de $\forall \epsilon$ es $(\epsilon > 0 \longrightarrow ((\exists \delta > 0) \vee (\epsilon + y = x)))$ y el de $(\exists \delta > 0)$ sería unicamente el ya que va seguido de una disyunción.
-        
-        \item $\forall x \forall y \exists z R(x,n) \longrightarrow P(z)$\\
-        \\
-        \solution\\
-        \\
-        En este problema las variables ligadas son $x$, $y$ y $z$ y la variable libre sería unicamente la $n$ \\
-        \\
-        En este el alcance de $\forall x$ es $\forall y \exists z (R(x,n) \longrightarrow P(z))$, el de $\forall y$ es $\exists z (R(x,n) \longrightarrow P(z))$ y el de $\exists z$ es $(R(x,n) \longrightarrow P(z))$.  \\
-        
-        \item $P(0) \wedge \forall k \ (P(k) \longrightarrow P(suc(k))) \longrightarrow \forall n  P(n)$\\
-        
-        \solution
-        \\
-        En este caso las variables ligadas son $k$ y $n$ y no hay ninguna variable libre.\\
-        \\
-        
-        En el caso de $\forall k$ su alcance seria  $\ (P(k) \longrightarrow P(suc(k))) \longrightarrow \forall n  P(n)$, mientras que el de $\forall n$ es solo $P(n)$ 
-        
-    \end{itemize}
+    \item Hacemos nuestro caso base que vendría siendo para la lista vacía, es decir, comprobamos que la propiedad se cumple para la lista vacía.
+    \item Nuestra $H.I$ se aplicaría para $xs$.
+    \item Para seguir con el paso inductivo, tomamos nuestra $H.I$, para demostrar que se cumple para $(x:xs)$
+\end{itemize}
 \end{homeworkProblem}
 
-\begin{homeworkProblem}[41]
-Cuántos renglones tiene la tabla de verdad de una proposición de $n$ variables? Justifica tu respuesta. (Si das una demostración formal se te da un punto extra).\\
-\\
+\begin{homeworkProblem}
+Realiza los recorridos \emph{preorden, inorden y postorden}
+  en el siguiente árbol binario:
+  \begin{figure}[h!]
+    \centering
+    \includegraphics[scale=0.8]{arbored.pdf}
+  \end{figure}
 \solution\\
 \\
-Toda tabla de verdad tiene $2^n$ renglones, donde la $n$ corresponde al número de variables proposicionales que aparecen en la fórmula.\\
-Esta fórmula sirve para conocer el número de combinaciones que existen de asignaciones de valores de verdad a cada una de las variables, siempre y cuando se cumpla con que los valores de verdad sean sólo dos -verdadero o falso- y que existan asignaciones de valores de verdad a cada una de las variables.
+\begin{itemize}
+\item Sabiendo que el recorrido $preorden$ es de la forma: $raíz$, $hi$, $hd$. Se vería de la sig. manera:\\
+$A,B,D,E,G,C,F,H,I$.
+\item Sabiendo que el recorrido $inorden$ es de la forma: $hi$, $raíz$, $hd$. El recorrido sería el sig:\\
+$D,B,G,E,A,C,H,I,F$.
+\item Ahora para hacer el recorrido $postorden$ de la forma: $hi$, $hd$, $raíz$. Quedaría de la sig. manera:\\
+$D,G,E,B,I,H,F,C,A$.
+\end{itemize}
 \end{homeworkProblem}
 
-\begin{homeworkProblem}
-    Pasa las siguientes expresiones a forma normal disyuntiva.
-        \begin{enumerate}
-            \item $(p \longrightarrow q) \vee (q \longrightarrow p)$
-            \item $(p \longrightarrow r) \wedge (q \longrightarrow r)$
-            \item $(\neg r) \longrightarrow (p \longrightarrow q)$
-            \item $(\neg p) \longleftrightarrow q$
-        \end{enumerate}
-\end{homeworkProblem}
-
-\begin{homeworkProblem}
-  Existe un algoritmo\footnote{De tiempo polinomial} que dada una expresión
-    lógica $\varphi$ de como resultado una expresión $\varphi'$ equivalente pero con
-    la mínima cantidad de variables y operadores posibles?\footnote{Esto quiere decir que
-    $\varphi'$ es mínima.}
-    \\
-    \solution\\
-    \\
-    No existe, podemos ver en esta referencia.\cite{brayton1984logic}
-\end{homeworkProblem}
-
-\begin{homeworkProblem}
-  \textbf{Cieto o falso:} Sea $\Gamma$ un conjunto de formulas.
-  Si para cualquier subconjunto de $\Gamma'\subseteq \Gamma$ se tiene que $\Gamma'$
-  es satisfacible, entonces $\Gamma$ es satisfacible.
-  Si no así, muestra un ejemplo. Si la respuesta es si, justifica.
-  \\
-  \solution\\
-  \\
-  Cierto.
-\end{homeworkProblem}
 \pagebreak
 
 \cite{miquelteorias,lodepe}
