@@ -98,8 +98,8 @@ sorting=ynt
 %   - Author
 %
 
-\newcommand{\hmwkTitle}{Tarea\ \#2}
-\newcommand{\hmwkDueDate}{Noviembre 11, 2020}
+\newcommand{\hmwkTitle}{Tarea\ \#3}
+\newcommand{\hmwkDueDate}{Diciembre 8, 2020}
 \newcommand{\hmwkClass}{Estructuras Discretas}
 \newcommand{\hmwkClassTime}{}
 \newcommand{\hmwkClassInstructor}{Profesora Alma Ar\'evalo Loyola}
@@ -156,8 +156,10 @@ sorting=ynt
 
 \pagebreak
 
+\section{Introduction}
+
 \begin{homeworkProblem}
-¿Qué es una definición recursiva?\\
+\item ¿Qué es una definición recursiva?\\
 \\
 \solution\\
 \\
@@ -167,16 +169,24 @@ La definición recursiva de una función define los valores de las funciones par
 \end{homeworkProblem}
 
 \begin{homeworkProblem}
-¿Qué quiere decir que un conjunto sea recursivo?\\
+ \item ¿Qué quiere decir que un conjunto sea recursivo?\\
 \\
 \solution\\
 \\
 En teoría de la computabilidad, un conjunto B es recursivo, computable o decidible (recurrente primitivo) cuando su función característica es computable total. Esto significa que la función característica, la cual es un predicado, toma valor 1 (cierto) para todos los elementos del conjunto y 0 (falso) para el resto.\\
-\\
-\end{homeworkProblem}
 
+\item Menciona tres consecuencias para las Ciencias de la Computación
+  si las definiciones recursivas no existieran.\\
+  \\
+  \begin{itemize}
+      \item No existirían las estructuras de datos dinamicos tales como las listas y los árboles.
+      \item Sería más complejo hacer programas que se necesitan repetir demasiadas veces.
+      \item Se necesitarían un mayor número de instrucciones para que finalmente se pueda compilar el programa.
+  \end{itemize}
+  \end{homeworkProblem}
+  
 \begin{homeworkProblem}
-¿De qué manera se relacionan la inducción y la recursión?\\
+ ¿De qué manera se relacionan la inducción y la recursión?\\
 \\
 \solution\\
 \\
@@ -192,14 +202,23 @@ Sin embargo, la recursión es algo mucho más abstracto que eso y se refiere a o
 una estructura autorreferencial, esto es, una estructura compuesta de las mismas estructuras
 a escala menor. La recursión es, en su máximo esplendor, una manera de resolver problemas.
 Esta consiste en detectar en primer lugar esa estructura recursiva y explotar esa estructura
-para resolverlo eficiente y elegantemente. \\
-\end{homeworkProblem}
-
+para resolverlo eficiente y elegantemente.\cite{turing2004essential} \\
+ \end{homeworkProblem}
+ 
 \begin{homeworkProblem}
-Enuncia el principio de inducción para las \emph{listas}.
+\item Enuncia el principio de inducción para los \emph{árboles binarios}.\\
 \\
 \solution\\
 \\
+Para poder demostrar el principio de inducción sobre árboles, tomamos un árbol T y hacemos:\\
+\begin{itemize}
+    \item Nuestro case base: sea $void$ un árbol binario, se dice que este cumple la propiedad.
+    \item $H.I$: si $T1$ y $T2$ árboles binarios, se dice que estos tambien cumplen la propiedad.
+    \item Se prueba que se cumple $(T1,a,T2)$.
+\end{itemize}
+
+\item Enuncia el principio de inducción para las \emph{listas}.\\
+
 Si queremos hacer inducción sobre listas, tomamos en cuenta que:
 \begin{itemize}
     \item Hacemos nuestro caso base que vendría siendo para la lista vacía, es decir, comprobamos que la propiedad se cumple para la lista vacía.
@@ -209,13 +228,13 @@ Si queremos hacer inducción sobre listas, tomamos en cuenta que:
 \end{homeworkProblem}
 
 \begin{homeworkProblem}
-Realiza los recorridos \emph{preorden, inorden y postorden}
+ \item Realiza los recorridos \emph{preorden, inorden y postorden}
   en el siguiente árbol binario:
   \begin{figure}[h!]
     \centering
     \includegraphics[scale=0.8]{arbored.pdf}
   \end{figure}
-\solution\\
+
 \\
 \begin{itemize}
 \item Sabiendo que el recorrido $preorden$ es de la forma: $raíz$, $hi$, $hd$. Se vería de la sig. manera:\\
@@ -227,10 +246,15 @@ $D,G,E,B,I,H,F,C,A$.
 \end{itemize}
 \end{homeworkProblem}
 
+\begin{homeworkProblem}
+ \item Demuestra las siguientes propiedades de las listas:\\
+ $length(rev(x:xs)) = length(x:xs)$\\
+ Esta formula se demostraría de la sig. manera:\\
+ Tonamos nuestro case base que sería para la lista vacía:\\
+ $xs$= 
+\end{homeworkProblem} 
 \pagebreak
 
-\cite{miquelteorias,lodepe}
 \printbibliography
-
 
 \end{document}
