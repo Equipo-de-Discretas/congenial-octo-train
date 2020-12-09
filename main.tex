@@ -117,7 +117,7 @@ sorting=ynt
     \vspace{0.1in}\large{\textit{\hmwkClassInstructor\ \hmwkClassTime}}
     \vspace{3in}
 }
-
+https://www.overleaf.com/project/5fcee573c47c2ff436630e54
 
 \author{\hmwkAuthorName}
 \date{}
@@ -173,7 +173,7 @@ La definición recursiva de una función define los valores de las funciones par
 \\
 \solution\\
 \\
-En teoría de la computabilidad, un conjunto B es recursivo, computable o decidible (recurrente primitivo) cuando su función característica es computable total. Esto significa que la función característica, la cual es un predicado, toma valor 1 (cierto) para todos los elementos del conjunto y 0 (falso) para el resto.\\
+En teoría de la computabilidad, un conjunto B es recursivo, computable o decidible (recurrente primitivo) cuando su función característica es computable total. Esto significa que la función característica, la cual es un predicado, toma valor 1 (cierto) para todos los elementos del conjunto y 0 (falso) para el resto. \cite{martinez2015jerarquia}  \\
 
 \item Menciona tres consecuencias para las Ciencias de la Computación
   si las definiciones recursivas no existieran.\\
@@ -181,7 +181,7 @@ En teoría de la computabilidad, un conjunto B es recursivo, computable o decidi
   \begin{itemize}
       \item No existirían las estructuras de datos dinamicos tales como las listas y los árboles.
       \item Sería más complejo hacer programas que se necesitan repetir demasiadas veces.
-      \item Se necesitarían un mayor número de instrucciones para que finalmente se pueda compilar el programa.
+      \item Se necesitarían un mayor número de instrucciones para que finalmente se pueda compilar el programa. 
   \end{itemize}
   \end{homeworkProblem}
   
@@ -251,7 +251,15 @@ $D,G,E,B,I,H,F,C,A$.
  $length(rev(x:xs)) = length(x:xs)$\\
  Esta formula se demostraría de la sig. manera:\\
  Tonamos nuestro case base que sería para la lista vacía:\\
- $xs$= 
+ $xs$= []. Queremos demostrar que:\\ 
+ $length(rev(x:[])) = length(x:[])$.\\
+ Al utilizar la definición de reversa quedaría: \\
+ $length(rev[] ++ [x])$ =  $length([] ++ [x])$ = $length[x]$.\\
+ Hacemos nuestra hipótesis de inducción para: \\
+ $length(rev(xs)) = length(xs)$.\\
+ Y hacemos nuestro paso inductivo:\\ 
+ $length(rev(x:xs)) = length(x:xs)$\\
+Utilizamos definición de reversa: $length((xs)++[x])$ =\\ $length(xs:x)$
 \end{homeworkProblem} 
 \pagebreak
 \printbibliography
